@@ -61,7 +61,7 @@ local palette = {
     dirt = "#4e3e2d",
     sand = "#8f7566",
 
-    red_faint = "#ffebec",
+    red_faint = "#320000",
     green_faint = "#e8ffe8",
     blue_faint = "#eae8ff",
     blue_faint_intense = "#dad6ff",
