@@ -119,7 +119,7 @@ function M.apply()
 
   local groups = {
     -- Built-In
-    ColorColumn = color("gray00", "gray00"),
+    ColorColumn = color("red_faint", "red_faint"),
     Conceal = color("gray18", "background"),
     CurSearch = color("", "thistle_bright"),
     Cursor = color("", "gray09"),
