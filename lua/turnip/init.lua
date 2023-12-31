@@ -18,6 +18,7 @@ local palette = {
     leaf = "#345420",
     sprout = "#7b9e7e",
     loam = "#4e3e2d",
+    water = "#5182a5",
 
     red_faint = "#ffebec",
     green_faint = "#e8ffe8",
@@ -59,6 +60,7 @@ local palette = {
     leaf = "#448b18",
     sprout = "#7b9e7e",
     loam = "#4e3e2d",
+    water = "#5182a5",
 
     red_faint = "#320000",
     green_faint = "#e8ffe8",
@@ -97,7 +99,7 @@ function turnip.apply()
   vim.g.colors_name = "turnip"
 
   local groups = {
-    -- Built-In
+    -- Basic
     ColorColumn = {bg = "red_faint"},
     Conceal = {fg = "annotation_faint"},
     CurSearch = {bg = "purple_pale"},
@@ -156,6 +158,7 @@ function turnip.apply()
     Title = {fg = "loam"},
     Visual = {bg = "ui_selection"},
     VisualNOS = {bg = "ui_selection"},
+    Underlined = {fg = "water", underline = true},
     WarningMsg = {fg = "ui_warning"},
     Whitespace = {fg = "annotation_faint"},
     WildMenu = {},
