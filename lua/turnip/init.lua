@@ -196,7 +196,7 @@ function turnip.apply()
   }
 
   for group, definition in pairs(groups) do
-    local attributes = {}
+    local attributes = vim.deepcopy(definition)
     remap("fg", definition, attributes)
     remap("bg", definition, attributes)
     remap("sp", definition, attributes)
