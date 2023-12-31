@@ -161,7 +161,7 @@ function turnip.apply()
     Underlined = {fg = "water", underline = true},
     WarningMsg = {fg = "ui_warning"},
     Whitespace = {fg = "annotation_faint"},
-    WildMenu = {},
+    WildMenu = {bg = "ui_menu_selected"},
     WinBar = {fg = "ui_statusline_fg_active", bg = "ui_statusline_bg"},
     WinBarNC = {fg = "ui_statusline_fg_inactive", bg = "ui_statusline_bg"},
 
