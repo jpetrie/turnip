@@ -19,6 +19,7 @@ local palette = {
     sprout = "#7b9e7e",
     loam = "#4e3e2d",
     water = "#5182a5",
+    slate = "#787878",
 
     red_faint = "#ffebec",
     green_faint = "#e8ffe8",
@@ -61,6 +62,7 @@ local palette = {
     sprout = "#7b9e7e",
     loam = "#4e3e2d",
     water = "#5182a5",
+    slate = "#787878",
 
     red_faint = "#320000",
     green_faint = "#e8ffe8",
@@ -155,7 +157,7 @@ function turnip.apply()
     TabLine = {bg = "ui_tabline_inactive"},
     TabLineFill = {bg = "ui_tabline_well"},
     TabLineSel = {bg = "ui_tabline_active"},
-    Title = {fg = "loam"},
+    Title = {fg = "plum"},
     Visual = {bg = "ui_selection"},
     VisualNOS = {bg = "ui_selection"},
     Underlined = {fg = "water", underline = true},
@@ -196,6 +198,12 @@ function turnip.apply()
     StorageClass = {fg = "plum"},
     String = {fg = "purple_dull"},
     Type = {fg = "purple_deep"},
+
+    -- vimdoc
+    ["@label.vimdoc"] = {fg = "purple_dull"},
+    ["@text.reference.vimdoc"] = {fg = "water", underline = true},
+    ["@text.literal.block.vimdoc"] = {fg = "loam"},
+    ["@parameter.vimdoc"] = {fg = "slate"},
   }
 
   for group, definition in pairs(groups) do
