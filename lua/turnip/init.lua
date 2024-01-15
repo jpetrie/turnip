@@ -17,7 +17,7 @@ local palette = {
 
     leaf = "#345420",
     sprout = "#7b9e7e",
-    loam = "#4e3e2d",
+    loam = "#7f5a33",
     water = "#5182a5",
     slate = "#787878",
 
