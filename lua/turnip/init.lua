@@ -200,6 +200,7 @@ function turnip.apply()
     StorageClass = {fg = "plum"},
     String = {fg = "purple_dull"},
     Type = {fg = "purple_deep"},
+    ["@type.builtin.cpp"] = {link = "Keyword"},
 
     -- vimdoc
     ["@label.vimdoc"] = {fg = "purple_dull"},
