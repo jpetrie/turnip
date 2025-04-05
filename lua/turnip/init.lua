@@ -52,28 +52,28 @@ local palette = {
     ui_border = "#626262",
   },
   dark = {
-    foreground = "#999999",
-    background = "#101010",
+    foreground = "#afafaf",
+    background = "#0c0c0c",
 
     -- Elements
     red_faint = "#ffebec",
 
-    purple_bold = "#9b238f",
-    purple_rich = "#532c8e",
-    purple_dull = "#7a5296",
+    purple_bold = "#962a8b",
+    purple_rich = "#683aad",
+    purple_dull = "#8d5daf",
 
-    blue_dust = "#1974b5",
+    blue_dust = "#23628e",
     blue_faint = "#dad6ff",
 
-    green_rich = "#3a7216",
+    green_rich = "#3e6b22",
     green_pale = "#6da372",
     green_faint = "#e8ffe8",
 
-    gold_pale = "#ffe39e",
+    gold_pale = "#664d0e",
 
     orange_pale = "#fcc18d",
     orange_faint = "#ffe9d6",
-    brown_bold = "#643820",
+    brown_bold = "#72442b",
 
     grey_slate = "#605953",
     grey_faint = "#b5b0ba",
@@ -87,7 +87,7 @@ local palette = {
     ui_warning = "#b56117",
     ui_error = "#c62411",
     ui_line_number = "#4e4e4e",
-    ui_color_column = "#1b1b1b",
+    ui_color_column = "#0f0f0f",
     ui_statusline_fg_active = "#dadada",
     ui_statusline_fg_inactive = "#626262",
     ui_statusline_bg = "#070707",
