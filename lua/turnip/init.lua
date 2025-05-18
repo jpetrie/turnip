@@ -170,6 +170,7 @@ function turnip.apply()
     TermCursor = {bg = "ui_cursor"},
     TermCursorNC = {bg = "ui_cursor"},
     Title = {fg = "purple_bold"},
+    Todo = {fg = "green_rich", bold = true},
     Underlined = {fg = "blue_dust", underline = true},
     Visual = {bg = "ui_selection"},
     VisualNOS = {bg = "ui_selection"},
