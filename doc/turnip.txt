@@ -1,0 +1,15 @@
+*turnip.txt*                      A colorscheme based on the colors of a turnip.
+==============================================================================
+INTRODUCTION                                                            *turnip*
+
+Turnip is a colorscheme for Neovim featuring muted purple and green tones.
+Light and dark variants are available, selected automatically based on the
+value of the `background` option.
+
+------------------------------------------------------------------------------
+USAGE                                                             *turnip-usage*
+
+Turnip can be activated as with any other colorscheme: `:colorscheme turnip`
+
+==============================================================================
+vim:tw=78:ft=help:norl:
