@@ -103,7 +103,7 @@ local palette = {
 }
 
 local function remap(key, definition, attributes)
-  local theme = vim.opt.background:get()
+  local theme = vim.o.background
   if definition[key] ~= nil then
     local value = palette[theme][definition[key]]
     attributes[key] = value
