@@ -1,4 +1,8 @@
-local M = {}
+local M = {
+  options = {
+    custom_groups = {}
+  }
+}
 
 local palette = {
   light = {
@@ -103,11 +107,23 @@ local palette = {
 }
 
 local function remap(key, definition, attributes)
-  local theme = vim.o.background
-  if definition[key] ~= nil then
-    local value = palette[theme][definition[key]]
+  local value = definition[key]
+  if value ~= nil and #value > 0 then
+    -- Anything other than a literal color (starting with #) is remapped through the palette.
+    if value:sub(1, 1) ~= "#" then
+      value = palette[vim.o.background][value]
+    end
+
     attributes[key] = value
   end
+end
+
+local function set_group(group, definition)
+  local attributes = vim.deepcopy(definition)
+  remap("fg", definition, attributes)
+  remap("bg", definition, attributes)
+  remap("sp", definition, attributes)
+  vim.api.nvim_set_hl(0, group, attributes)
 end
 
 M.apply = function()
@@ -228,12 +244,16 @@ M.apply = function()
   }
 
   for group, definition in pairs(groups) do
-    local attributes = vim.deepcopy(definition)
-    remap("fg", definition, attributes)
-    remap("bg", definition, attributes)
-    remap("sp", definition, attributes)
-    vim.api.nvim_set_hl(0, group, attributes)
+    set_group(group, definition)
   end
+
+  for group, definition in pairs(M.options.custom_groups) do
+    set_group(group, definition)
+  end
+end
+
+M.setup = function(options)
+  M.options = vim.tbl_deep_extend("keep", options, M.options)
 end
 
 return M
