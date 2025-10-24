@@ -22,7 +22,7 @@ local palette = {
 
     green_rich = "#3a7216",
     green_pale = "#6da372",
-    green_faint = "#e8ffe8",
+    green_faint = "#b3cca9",
 
     gold_pale = "#ffe39e",
 
