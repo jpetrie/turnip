@@ -30,8 +30,8 @@ local palette = {
     orange_faint = "#ffe9d6",
     brown_bold = "#643820",
 
-    grey_slate = "#605953",
-    grey_faint = "#b5b0ba",
+    gray_slate = "#605953",
+    gray_faint = "#b5b0ba",
 
     -- Interface
     ui_cursor = "#949494",
@@ -79,8 +79,8 @@ local palette = {
     orange_faint = "#ffe9d6",
     brown_bold = "#72442b",
 
-    grey_slate = "#605953",
-    grey_faint = "#b5b0ba",
+    gray_slate = "#605953",
+    gray_faint = "#b5b0ba",
 
     -- Interface
     ui_cursor = "#626262",
@@ -156,7 +156,7 @@ M.apply = function()
     LineNrAbove = {fg = "ui_line_number"},
     LineNrBelow = {fg = "ui_line_number"},
     MatchParen = {bg = "gold_pale"},
-    ModeMsg = {fg = "grey_faint"},
+    ModeMsg = {fg = "gray_faint"},
     MoreMsg = {fg = "ui_success"},
     MsgArea = {fg = "foreground"},
     MsgSeparator = {fg = "ui_border"},
@@ -200,12 +200,12 @@ M.apply = function()
     -- Diagnostics
     DiagnosticDeprecated = {sp = "ui_error", strikethrough = true},
     DiagnosticError = {fg = "ui_error"},
-    DiagnosticHint = {fg = "grey_faint"},
-    DiagnosticInfo = {fg = "grey_faint"},
+    DiagnosticHint = {fg = "gray_faint"},
+    DiagnosticInfo = {fg = "gray_faint"},
     DiagnosticOk = {fg = "ui_success"},
     DiagnosticUnderlineError = {fg = "ui_error", underline = true},
-    DiagnosticUnderlineHint = {fg = "grey_faint", underline = true},
-    DiagnosticUnderlineInfo = {fg = "grey_faint", underline = true},
+    DiagnosticUnderlineHint = {fg = "gray_faint", underline = true},
+    DiagnosticUnderlineInfo = {fg = "gray_faint", underline = true},
     DiagnosticUnderlineOk = {fg = "ui_success", underline = true},
     DiagnosticUnderlineWarn = {fg = "ui_warning", underline = true},
     DiagnosticUnnecessary = {fg = "ui_warning", italic = true},
@@ -226,7 +226,7 @@ M.apply = function()
     Special = {fg = "foreground"},
     Statement = {fg = "foreground"},
     StorageClass = {fg = "purple_bold"},
-    String = {fg = "grey_slate"},
+    String = {fg = "gray_slate"},
     Type = {fg = "purple_rich"},
 
     -- Semantic Tokens
@@ -237,8 +237,8 @@ M.apply = function()
 
     -- vimdoc
     ["@label.vimdoc"] = {fg = "purple_dull"},
-    ["@markup.raw.vimdoc"] = {fg = "grey_slate"},
-    ["@parameter.vimdoc"] = {fg = "grey_slate"},
+    ["@markup.raw.vimdoc"] = {fg = "gray_slate"},
+    ["@parameter.vimdoc"] = {fg = "gray_slate"},
     ["@text.literal.block.vimdoc"] = {fg = "brown_bold"},
     ["@text.reference.vimdoc"] = {fg = "blue_dust", underline = true},
   }
