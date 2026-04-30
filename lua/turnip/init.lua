@@ -235,6 +235,10 @@ M.apply = function()
     ["@type.builtin.cpp"] = {link = "Keyword"},
     ["@variable"] = {link = "Foreground"},
 
+    -- C++
+    cppAccess = {link = "Keyword"},
+    cppCast = {link = "Keyword"},
+
     -- vimdoc
     ["@label.vimdoc"] = {fg = "purple_dull"},
     ["@markup.raw.vimdoc"] = {fg = "gray_slate"},
